@@ -20,7 +20,6 @@ public class ExceptionControllerAdvice {
                 .map(ConstraintViolation::getMessage)
                 .collect(Collectors.toList());
 
-        // You can join them into one message, or return a list
         String message = String.join("; ", messages);
         ErrorDetails errorDetails = new ErrorDetails(false, message, 422);
 
