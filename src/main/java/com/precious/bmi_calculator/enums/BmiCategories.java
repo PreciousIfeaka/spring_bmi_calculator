@@ -7,9 +7,4 @@ public enum BmiCategories {
     NORMAL,
     OBESITY,
     OVERWEIGHT;
-
-    @JsonValue
-    public String getValue() {
-        return name().toLowerCase();
-    }
 }

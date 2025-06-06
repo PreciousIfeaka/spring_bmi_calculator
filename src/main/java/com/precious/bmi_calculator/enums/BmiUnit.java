@@ -4,10 +4,5 @@ import com.fasterxml.jackson.annotation.JsonValue;
 
 public enum BmiUnit {
     METRIC,
-    IMPERIAL;
-
-    @JsonValue
-    public  String getValue() {
-        return name().toLowerCase();
-    }
+    IMPERIAL
 }

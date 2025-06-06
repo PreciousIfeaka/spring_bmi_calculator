@@ -2,5 +2,11 @@ package com.precious.bmi_calculator.dtos;
 
 import com.precious.bmi_calculator.enums.BmiCategories;
 
-public record BmiResponseDto(String name, double value, BmiCategories category) {
-}
+import java.util.UUID;
+
+public record BmiResponseDto(
+        UUID id,
+        String name,
+        float value,
+        BmiCategories category
+) {}

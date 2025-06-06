@@ -19,7 +19,7 @@ public class BmiController {
         this.bmiService = bmiService;
     }
 
-    @PostMapping()
+    @PostMapping("/calculate")
     public ResponseEntity<BmiResponseDto> calculateBmi(
             @RequestBody BmiRequestDto bmiRequestDto
     ) {
